@@ -36,7 +36,6 @@ img {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  background-color: #8fe68c;
 }
 /* ==================mobile============== */
 @media screen and (min-width: 480px) {
@@ -86,6 +85,13 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .hero {
+      background-image: url(../images/mobile/hero@2x.png);
+    }
   }
 }
 
@@ -167,12 +173,13 @@ header {
 /* =================price================= */
 
 .price {
-  background: #111319;
-  background-image: url(../images/mobile/img.png);
+  background-image: url(../images/mobile/price.png),
+    linear-gradient(#111319, #111319);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 .price-item {
   margin-bottom: 20px;
   color: rgba(157, 164, 189, 0.6);
@@ -260,6 +267,24 @@ header {
   line-height: 1.36;
   text-align: center;
   color: var(--color-text);
+}
+@media screen and (max-width: 370px) {
+  .list-item {
+    margin-bottom: 6px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.35;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--color-text);
+  }
+  .list-text {
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--color-text);
+  }
 }
 /* =======================team================ */
 .team-item {
