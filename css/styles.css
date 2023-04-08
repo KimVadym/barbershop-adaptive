@@ -43,7 +43,7 @@ img {
     width: 448px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #d66060;
+   
   }
 }
 
@@ -52,8 +52,7 @@ header {
   position: absolute;
   width: 100%;
 }
-.header-wrapper {
-}
+
 .menu-btn {
   border: none;
   background-color: transparent;
@@ -423,8 +422,7 @@ color: var(--color-text);
   flex-direction: column;
   gap: 30px;
 }
-.team-pic {
-}
+
 .name {
   margin-bottom: 8px;
   font-weight: 400;
@@ -456,8 +454,7 @@ color: var(--color-text);
   border-radius: 50%;
   background-color: var(--main-color);
 }
-.soc-list-item {
-}
+
 /* =======================gallary================ */
 .gallary {
   padding-top: 84px;
@@ -475,16 +472,7 @@ color: var(--color-text);
 }
 /* =======================footer======================= */
 
-.footer-top {
 
-}
-
-.footer-wrapper {
-
-}
-.footer-wrapper-main {
- 
-}
 .online-wrapper {
   background: #191c26;
   padding-top: 84px;
@@ -505,8 +493,7 @@ color: var(--color-text);
 .label-wrapp {
   position: relative;
 }
-.contact-item {
-}
+
 .form-input {
   width: 100%;
   height: 24px;
@@ -579,17 +566,11 @@ color: var(--title-item);
   margin-bottom: 20px;
 
 }
-.map {
-}
+
 .address-icon {
   display: flex;gap: 16px;
 }
-.contacts-item {
-}
-.tel {
-}
-.email {
-}
+
 .time {
   font-weight: 600;
 font-size: 11px;
