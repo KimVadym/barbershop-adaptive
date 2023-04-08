@@ -67,6 +67,9 @@ header {
     width: 720px;
     background-color: #6ccae4;
   }
+  .menu-btn {
+    display: none;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -75,115 +78,122 @@ header {
   }
 }
 /* ====================mobile-menu================= */
-.overlay {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(76, 74, 74, 0.5);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  z-index: 100;
-  transition: visibility 1000ms linear , opacity 1000ms linear;
-}
-.overlay.is-open {
-  opacity: 1;
-  pointer-events: auto;
-  visibility: visible;
- 
-}
+@media screen and (max-width:767px) {
+ .overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(76, 74, 74, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 100;
+    transition: visibility 1000ms linear , opacity 1000ms linear;
+  }
+  .overlay.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+   
+  } 
+  
+  .mobile-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background-color: #fff;
+    padding-left: 40px;
+    padding-top: 118px;
 
-.mobile-menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 70%;
-  height: 100%;
-  background-color: #fff;
-  padding-left: 40px;
-  padding-top: 118px;
-}
-.close-btn {
-  position: absolute;
-  top: 60px;
-  right: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-color: transparent;
-  background-color: inherit;
-  transition: transform 300ms linear;
-  padding: 0;
-}
-.close-btn:hover {
-transform: rotate(180deg);
-}
-.menu-wrapp {
-  display: flex;flex-direction: column;
-  gap: 64px;
-}
-.menu-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-
-}
-.mobile-nav  a {
-  font-weight: 600;
-font-size: 18px;
-line-height: 25px;
-text-align: center;
-letter-spacing: 0.1em;
-color: var(--color-text);
-transition: color 300ms linear ;
-
-}
-.mobile-nav a:hover {
-   color: var(--color-hover);
-}
-
-.menu-tel {
-
-  font-weight: 600;
-font-size: 18px;
-line-height: 25px;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-color: var(--color-text);
-}
-.menu-tel:hover {
-  color :var(--color-hover);
-}
-.btn {
-  margin-top: 24px;
-  display: block;
-}
-.menu-soc-wrapp {
-display: flex;
-align-items: first baseline;
-
- 
-}
-.menu-soc-wrapp::before {
-display: inline-block;
-  content: "";
-  width: 60px;
-  height: 1px;
-  background-color: var(--color-text);
-  margin-right: 40px;
-  vertical-align: middle;
+  }
   
 
 
-}
-.menu-soc-wrapp a {
-  font-weight: 600;
-font-size: 14px;
-line-height: 19px;
-letter-spacing: 0.2em;
-color: var(--color-text);
+  .close-btn {
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: transparent;
+    background-color: inherit;
+    transition: transform 300ms linear;
+    padding: 0;
+  }
+  .close-btn:hover {
+  transform: rotate(180deg);
+  }
+  .menu-wrapp {
+    display: flex;flex-direction: column;
+    gap: 64px;
+  }
+  .menu-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  
+  }
+  .mobile-nav  a {
+    font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: var(--color-text);
+  transition: color 300ms linear ;
+  
+  }
+  .mobile-nav a:hover {
+     color: var(--color-hover);
+  }
+  
+  .menu-tel {
+  
+    font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text);
+  }
+  .menu-tel:hover {
+    color :var(--color-hover);
+  }
+  .btn {
+    margin-top: 24px;
+    display: block;
+  }
+  .menu-soc-wrapp {
+  display: flex;
+  align-items: first baseline;
+  
+   
+  }
+  .menu-soc-wrapp::before {
+  display: inline-block;
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: var(--color-text);
+    margin-right: 40px;
+    vertical-align: middle;
+    
+  
+  
+  }
+  .menu-soc-wrapp a {
+    font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  color: var(--color-text);
+  }
+  
 }
 
 /* ==================mobile-menu=========== */
