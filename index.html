@@ -30,12 +30,41 @@
           <a href="#">
             <img src="./images/logo.svg" width="40" height="31" alt="logo" />
           </a>
-          <button class="menu-btn">
+          <button class="menu-btn" data-menu-open>
             <svg class="mobile-menu-btn" width="24" height="16">
               <use href="./images/icons.svg#menu"></use>
             </svg>
           </button>
         </nav>
+      </div>
+      <div class="overlay is-open" data-menu>
+        <div class="mobile-menu">
+          <button type="button" class="close-btn" data-menu-close>
+            <svg class="btn-menu-close" width="19" height="19">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+          <div class="menu-wrapp">
+            <ul class="menu-nav">
+              <li class="mobile-nav"><a href="#"> Про нас</a></li>
+              <li class="mobile-nav"><a href="#price">Послуги та ціни</a></li>
+              <li class="mobile-nav"><a href="#team">Майстри</a></li>
+              <li class="mobile-nav"><a href="#contacts">Контакти</a></li>
+            </ul>
+            <div class="menu-contact-wrapper">
+              <a class="menu-tel" href="tel:+380441111111">+38 044 111 11 11</a>
+              <button class="btn" type="button">онлайн-запис</button>
+            </div>
+          <div class="menu-soc-wrapp">
+            <ul class="">
+              
+              <li><a href="#" ref="noreferrer noopener">Instagram</a></li>
+              <li><a href="#" ref="noreferrer noopener">Youtube</a></li>
+            </ul>
+          </div>
+          
+          </div>
+        </div>
       </div>
     </header>
     <!-- ===================hero=============== -->
@@ -70,12 +99,13 @@
           <button class="btn" type="button">онлайн-запис</button>
         </div>
       </section>
+      <!-- ====================price================ -->
       <section class="price pad">
         <div class="container">
           <p class="text-item price-item">
             Проведи час у компанії кращих майстрів
           </p>
-          <h2 class="title price-title">Послуги та ціни</h2>
+          <h2 class="title price-title" id="price">Послуги та ціни</h2>
           <ul class="price-wrapper">
             <li class="price-list">
               <p class="price-list-text">Чоловіча стрижка</p>
@@ -152,7 +182,7 @@
           <p class="text-item team-item">
             для справжніх шанувальників атмосфери
           </p>
-          <h2 class="title team-title">Наші майстри</h2>
+          <h2 class="title team-title" id="team">Наші майстри</h2>
           <ul class="team-list-wrapp">
             <li class="team-list">
               <img
@@ -298,11 +328,12 @@
         </div>
       </section>
     </main>
+    <!-- footer=================== -->
     <footer>
       <section class="footer-top">
-        <div class="container footer-wrapper">
+        <div class=" footer-wrapper">
           <div class="footer-wrapper-main">
-            <div class="online-wrapper">
+            <div class="online-wrapper container">
               <h2 id="online-entry" class="title form-title">Онлайн-запис</h2>
               <form class="form-wrap-container">
                 <div class="label-wrapp contact-item">
@@ -333,18 +364,18 @@
                   <label class="form-label" for="text-a">повідомлення</label>
                 </div>
 
-                <button type="submit" class="btn">Надіслати</button>
+                <button type="submit" class="btn btn-orange">Надіслати</button>
               </form>
             </div>
 
-            <div class="contact-wrapper">
+            <div class="contact-wrapper container">
               <h2 class="title price-title" id="contacts">Контакти</h2>
               <address class="address">
                 <ul>
                   <li class="contacts-title">
                     <div class="map address-icon">
                       <svg width="24" height="24">
-                        <use href="./images/svg.svg#icon-map-pin"></use>
+                        <use href="./images/icons.svg#map"></use>
                       </svg>
                       <a
                         class="contacts-item"
@@ -356,7 +387,7 @@
                   <li class="contacts-title">
                     <div class="tel address-icon">
                       <svg width="24" height="24">
-                        <use href="./images/svg.svg#icon-Shape"></use>
+                        <use href="./images/icons.svg#shape"></use>
                       </svg>
                       <a class="contacts-item" href="tel:+380441111111"
                         >+38 044 111 11 11</a
@@ -366,7 +397,7 @@
                   <li class="contacts-title">
                     <div class="email address-icon">
                       <svg width="24" height="24">
-                        <use href="./images/svg.svg#icon-mail"></use>
+                        <use href="./images/icons.svg#mail"></use>
                       </svg>
                       <a
                         class="contacts-item email"
@@ -385,13 +416,6 @@
       </section>
 
       <div class="footer-soc container">
-        <div class="copyright">
-          <svg width="12" height="12">
-            <use href="./images/svg.svg#icon-copyraite"></use>
-          </svg>
-          <p>Copyright 2020</p>
-        </div>
-
         <ul class="soc">
           <li class="soc-ico">
             <a
@@ -412,7 +436,16 @@
             >
           </li>
         </ul>
+        <div class="copyright">
+          <svg width="12" height="12">
+            <use href="./images/icons.svg#copyraite"></use>
+          </svg>
+          <p>Copyright 2020</p>
+        </div>
+
+       
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
