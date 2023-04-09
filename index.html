@@ -27,9 +27,27 @@
     <header>
       <div class="container header-wrapper">
         <nav class="header-nav">
-          <a href="#">
+          <a href="#" class="logo"  >
             <img src="./images/logo.svg" width="40" height="31" alt="logo" />
           </a>
+          <ul class="menu">
+            <li class="menu-item">
+              <a class="menu-link" href="#about">Про нас</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#price">Послуги та ціни</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#team">Майстри</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#contacts">Контакти</a>
+            </li>
+          </ul>
+          <a class="tel" href="tel:+380441111111">+38 044 111 11 11</a>
+          <button class="btn-tabl" type="button" href="#online-entry">
+            онлайн-запис
+          </button>
           <button class="menu-btn" data-menu-open>
             <svg class="mobile-menu-btn" width="24" height="16">
               <use href="./images/icons.svg#menu"></use>
@@ -72,12 +90,36 @@
     <main>
       <section class="hero">
         <div class="container hero-container">
+          <div class="soc-wrapp">
+            <ul class="hero-left-box">
+              <li class="et">
+                <a
+                  class="soc-link"
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Instagram</a
+                >
+              </li>
+              <li class="et">
+                <a
+                  class="soc-link"
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="hero-right-box">
           <p class="hero-item text-item">A hair salon for men in Kyiv</p>
           <h1 class="hero-title">BarberShop</h1>
           <p class="hero-title-item">
             Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно
             та зі смаком.
           </p>
+        </div>
         </div>
       </section>
       <!-- =================about================ -->
