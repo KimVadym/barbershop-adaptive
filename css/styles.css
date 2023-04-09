@@ -162,10 +162,7 @@ display: none;
     pointer-events: none;
     z-index: 100;
     transition: visibility 1000ms linear , opacity 1000ms linear;
-    transform: scale(1) rotate(1turn);
-    transition-property: transform;
-    transition-duration: var(--animation-time);
-    transition-timing-function: var(--trans-function);
+    
   }
   .overlay.is-open {
     opacity: 1;
