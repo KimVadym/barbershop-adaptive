@@ -162,7 +162,7 @@ display: none;
     pointer-events: none;
     z-index: 100;
     transition: visibility 1000ms linear , opacity 1000ms linear;
-    transform: translate(-50%, -50%) scale(1) rotate(1turn);
+    transform: scale(1) rotate(1turn);
     transition-property: transform;
     transition-duration: var(--animation-time);
     transition-timing-function: var(--trans-function);
