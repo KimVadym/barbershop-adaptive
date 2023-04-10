@@ -27,7 +27,7 @@
     <header>
       <div class="container header-wrapper">
         <nav class="header-nav">
-          <a href="#" class="logo"  >
+          <a href="#" class="logo">
             <img src="./images/logo.svg" width="40" height="31" alt="logo" />
           </a>
           <ul class="menu">
@@ -45,47 +45,50 @@
             </li>
           </ul>
           <a class="tel" href="tel:+380441111111">+38 044 111 11 11</a>
-          <button class="btn-tabl" type="button" href="#online-entry">
-            онлайн-запис
-          </button>
-          <button class="menu-btn" data-menu-open>
+          <button class="btn-tabl" type="button">онлайн-запис</button>
+          <button class="menu-btn js-open-menu">
             <svg class="mobile-menu-btn" width="24" height="16">
               <use href="./images/icons.svg#menu"></use>
             </svg>
           </button>
         </nav>
       </div>
-      <div class="overlay "data-menu >
-        <div class="mobile-menu is-open" >
-          <button type="button" class="close-btn" data-menu-close>
-            <svg class="btn-menu-close" width="19" height="19">
-              <use href="./images/icons.svg#close"></use>
-            </svg>
-          </button>
-          <div class="menu-wrapp">
-            <ul class="menu-nav">
-              <li class="mobile-nav"><a href="./por.html"> Про нас</a></li>
-              <li class="mobile-nav"><a href="#price">Послуги та ціни</a></li>
-              <li class="mobile-nav"><a href="#team">Майстри</a></li>
-              <li class="mobile-nav"><a href="#contacts">Контакти</a></li>
-            </ul>
-            <div class="menu-contact-wrapper">
-              <a class="menu-tel" href="tel:+380441111111">+38 044 111 11 11</a>
-              <button class="btn" type="button">онлайн-запис</button>
-            </div>
+
+      <div class="mobile-menu js-menu-container">
+        <button type="button" class="close-btn js-close-menu">
+          <svg class="btn-menu-close" width="19" height="19">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <div class="menu-wrapp">
+          <ul class="menu-nav">
+            <li class="mobile-nav">
+              <a class="mobile-nav-item" href="#about"> Про нас</a>
+            </li>
+            <li class="mobile-nav">
+              <a class="mobile-nav-item" href="#price">Послуги та ціни</a>
+            </li>
+            <li class="mobile-nav">
+              <a class="mobile-nav-item" href="#team">Майстри</a>
+            </li>
+            <li class="mobile-nav">
+              <a class="mobile-nav-item" href="#contacts">Контакти</a>
+            </li>
+          </ul>
+          <div class="menu-contact-wrapper">
+            <a class="menu-tel" href="tel:+380441111111">+38 044 111 11 11</a>
+            <button class="btn" type="button">онлайн-запис</button>
+          </div>
           <div class="menu-soc-wrapp">
             <ul class="">
-              
-              <li><a href="#" ref="noreferrer noopener">Instagram</a></li>
-              <li><a href="#" ref="noreferrer noopener">Youtube</a></li>
+              <li><a href="#" rel="noreferrer noopener">Instagram</a></li>
+              <li><a href="#" rel="noreferrer noopener">Youtube</a></li>
             </ul>
-          </div>
-          
           </div>
         </div>
       </div>
     </header>
-    
+
     <!-- ===================hero=============== -->
     <main>
       <section class="hero">
@@ -113,17 +116,17 @@
             </ul>
           </div>
           <div class="hero-right-box">
-          <p class="hero-item text-item">A hair salon for men in Kyiv</p>
-          <h1 class="hero-title">BarberShop</h1>
-          <p class="hero-title-item">
-            Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно
-            та зі смаком.
-          </p>
-        </div>
+            <p class="hero-item text-item">A hair salon for men in Kyiv</p>
+            <h1 class="hero-title">BarberShop</h1>
+            <p class="hero-title-item">
+              Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно
+              та зі смаком.
+            </p>
+          </div>
         </div>
       </section>
       <!-- =================about================ -->
-      <section class="about pad">
+      <section class="about pad" id="about">
         <div class="container">
           <p class="about-item text-item">ПРО НАС</p>
           <h2 class="about-title title">Найкращий Барбершоп твого міста</h2>
@@ -139,16 +142,16 @@
             хвилі". Тому ми завжди готові вдосконалити кожного, хто до нас
             приходить!
           </p>
-          <button class="btn" href="#form" type="button">онлайн-запис</button>
+          <button class="btn" type="button">онлайн-запис</button>
         </div>
       </section>
       <!-- ====================price================ -->
-      <section class="price pad">
+      <section class="price pad" id="price">
         <div class="container">
           <p class="text-item price-item">
             Проведи час у компанії кращих майстрів
           </p>
-          <h2 class="title price-title" id="price">Послуги та ціни</h2>
+          <h2 class="title price-title">Послуги та ціни</h2>
           <ul class="price-wrapper">
             <li class="price-list">
               <p class="price-list-text">Чоловіча стрижка</p>
@@ -183,7 +186,7 @@
               <p class="price-list-item">від 200 грн.</p>
             </li>
           </ul>
-          <button type="button" href="#form" class="btn btn-orange">онлайн-запис</button>
+          <button type="button" class="btn btn-orange">онлайн-запис</button>
         </div>
       </section>
       <!-- =================why================= -->
@@ -220,12 +223,12 @@
         </div>
       </section>
       <!-- =================team====================== -->
-      <section>
+      <section id="team">
         <div class="container">
           <p class="text-item team-item">
             для справжніх шанувальників атмосфери
           </p>
-          <h2 class="title team-title" id="team">Наші майстри</h2>
+          <h2 class="title team-title">Наші майстри</h2>
           <ul class="team-list-wrapp">
             <li class="team-list">
               <img
@@ -362,8 +365,8 @@
             </li>
             <li class="gallary-list">
               <img
-                srcset="./images/mobile/Rectangle 28@2x.jpg 2x"
-                src="./images/mobile/Rectangle 28.jpg"
+                srcset="./images/mobile/Rectangle28@2x.jpg 2x"
+                src="./images/mobile/Rectangle28.jpg"
                 alt=""
               />
             </li>
@@ -374,7 +377,7 @@
     <!-- footer=================== -->
     <footer>
       <section class="footer-top">
-        <div class=" footer-wrapper">
+        <div class="footer-wrapper">
           <div class="footer-wrapper-main">
             <div class="online-wrapper container">
               <h2 id="online-entry" class="title form-title">Онлайн-запис</h2>
@@ -457,7 +460,6 @@
           </div>
         </div>
       </section>
-
       <div class="footer-soc container">
         <ul class="soc">
           <li class="soc-ico">
@@ -485,10 +487,9 @@
           </svg>
           <p>Copyright 2020</p>
         </div>
-
-       
       </div>
     </footer>
-    <script src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/mobile-menu.js"></script> -->
+    <script src="./js/mobile.js"></script>
   </body>
 </html>
