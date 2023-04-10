@@ -151,9 +151,24 @@ header {
   .menu {
     display: none;
   }
-
-  .mob-menu-wrapp {
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
     background-color: #fff;
+    padding-left: 40px;
+    padding-top: 118px;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .mobile-menu.is-open {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
   }
 
   .close-btn {
@@ -229,25 +244,6 @@ header {
     letter-spacing: 0.2em;
     color: var(--color-text);
   }
-}
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 70%;
-  height: 100%;
-  background-color: #fff;
-  padding-left: 40px;
-  padding-top: 118px;
-  z-index: 100;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-.mobile-menu.is-open {
-  opacity: 1;
-  pointer-events: all;
-  visibility: visible;
 }
 
 /* ==================mobile-menu=========== */
